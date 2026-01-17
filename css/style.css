@@ -15,6 +15,10 @@ body {
 #work .fp-slide,
 #work .fp-tableCell,
 
+#skills,
+#skills .fp-slide,
+#skills .fp-tableCell,
+
 #about,
 #about .fp-slide,
 #about .fp-tableCell,
@@ -23,9 +27,9 @@ body {
 #contact .fp-slide,
 #contact .fp-tableCell,
 
-#portfolio,
-#portfolio .fp-slide,
-#portfolio .fp-tableCell,
+#projects,
+#projects .fp-slide,
+#projects .fp-tableCell,
 
 footer,
 footer .fp-slide,
@@ -50,7 +54,8 @@ h5 {
 /* start all section */
 #work,
 #about,
-#portfolio,
+#skills,
+#projects,
 #contact {
     padding-top: 100px;
     padding-bottom: 120px;
@@ -187,7 +192,7 @@ h5 {
 }
 
 #home h3 {
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 10px;
 }
 
@@ -214,6 +219,7 @@ h5 {
 /* start work */
 #work {
     background: #1a1a1a;
+    padding-bottom: 50px;
 }
 
 #work h2 {
@@ -251,8 +257,17 @@ h5 {
 
 /*end of work  */
 
+/* start skills */
+#skills {
+    background: #1a1a1a;
+    text-align: center;
+    padding-top: 50px;
+}
+/* end skills */
+
 /* start about */
-#about h4 {
+#about h4,
+#skills h4 {
     padding: 15px 0;
     color: #D43F52;
 }
@@ -286,23 +301,23 @@ h5 {
 /* end of about */
 
 /* start project */
-#portfolio {
-    background: #1a1a1a;
-    text-align: center;
-    
+#projects {
+    background: #000000;
+    text-align: left;
+    padding-bottom: 200px;
 }
 
-#portfolio h2 {
+#projects h2 {
     padding-bottom: 30px;
 }
 
-#portfolio .portfolio-thumb {
+#projects .portfolio-thumb {
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
 }
 
-#portfolio .portfolio-thumb .portfolio-overlay {
+#projects .portfolio-thumb .portfolio-overlay {
     background: #D43F52;
     top: 0;
     left: 0;
@@ -316,7 +331,7 @@ h5 {
     transition: all 0.4s ease-in-out;
 }
 
-#portfolio .portfolio-thumb:hover .portfolio-overlay {
+#projects .portfolio-thumb:hover .portfolio-overlay {
     cursor: pointer;
     opacity: 0.6;
     transform: scale(0.8);
@@ -385,7 +400,7 @@ h5 {
 /* footer */
 
 footer {
-    border-top: 1px solid #090900;
+    border-top: 1px solid #333333;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
